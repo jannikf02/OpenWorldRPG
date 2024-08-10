@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bo8e43vkmqdbm"
+path="res://.godot/imported/park_road_junction_decorated_A.obj-7b3a0635d980e3c2f98f01045a8f2640.mesh"
+
+[deps]
+
+files=["res://.godot/imported/park_road_junction_decorated_A.obj-7b3a0635d980e3c2f98f01045a8f2640.mesh"]
+
+source_file="res://tiles/park_road_junction_decorated_A.obj"
+dest_files=["res://.godot/imported/park_road_junction_decorated_A.obj-7b3a0635d980e3c2f98f01045a8f2640.mesh", "res://.godot/imported/park_road_junction_decorated_A.obj-7b3a0635d980e3c2f98f01045a8f2640.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

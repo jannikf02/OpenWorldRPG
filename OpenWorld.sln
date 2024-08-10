@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenWorld", "OpenWorld.csproj", "{A9BAF457-E0B5-4D42-B5DE-823D07D1C405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9BAF457-E0B5-4D42-B5DE-823D07D1C405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BAF457-E0B5-4D42-B5DE-823D07D1C405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BAF457-E0B5-4D42-B5DE-823D07D1C405}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{A9BAF457-E0B5-4D42-B5DE-823D07D1C405}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{A9BAF457-E0B5-4D42-B5DE-823D07D1C405}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{A9BAF457-E0B5-4D42-B5DE-823D07D1C405}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

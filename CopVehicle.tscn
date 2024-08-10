@@ -1,0 +1,82 @@
+[gd_scene load_steps=6 format=3 uid="uid://disvqjy7nfyp5"]
+
+[ext_resource type="ArrayMesh" uid="uid://c30q8cs81bivl" path="res://tiles/car_police.obj" id="1_cain8"]
+[ext_resource type="Script" path="res://CopVehicle.cs" id="1_pcesk"]
+[ext_resource type="ArrayMesh" uid="uid://dlk81xa053rjs" path="res://tiles/car_police_wheel_front_left.obj" id="2_8k1hh"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yukgk"]
+points = PackedVector3Array(-1.05155, 1.1754, -1.7577, 1.71914, -0.989996, 3.81186, 1.63052, -1.39026, 3.6163, 1.71914, -0.989996, -3.81186, -1.6325, -1.37798, -3.58487, -1.73536, -0.99031, 3.81186, 0.884932, 1.6303, -0.238055, 1.59977, -0.0370189, -3.69246, -1.61599, -0.0373337, -3.69246, -1.61599, -0.394661, 3.57306, 1.62809, -1.38816, -3.61092, -0.901154, 1.6303, -0.238055, -0.8276, -1.45351, 2.62343, 0.646878, -0.156338, 3.45441, 1.71914, -0.275342, 2.14324, -1.63236, -1.37786, 3.58455, 0.8275, -1.48254, -2.56332, -1.73536, -0.275342, 2.14324, 1.48075, -0.51335, 3.81186, -1.73536, -0.99031, -3.81186, 1.03533, 1.1754, -1.7577, 0.8275, -1.48254, 2.67504, -0.6631, -0.156338, 3.45441, 1.59977, -0.394661, 3.57306, -0.8276, -1.45351, -2.51386, -1.49663, -0.513665, 3.81186, -1.05155, 1.1754, 0.658621, 1.03533, 1.1754, 0.658621, -1.73536, -0.394661, 2.50144, 1.71914, -0.394661, 2.50144)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sy7uk"]
+size = Vector3(5, 5, 10)
+
+[node name="CopVehicle" type="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+mass = 60.0
+gravity_scale = 2.0
+script = ExtResource("1_pcesk")
+
+[node name="CarPolice" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_cain8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_yukgk")
+
+[node name="VehicleWheel3D" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.57034, -1.17353, 2)
+use_as_steering = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.57
+suspension_stiffness = 180.0
+
+[node name="CarPoliceWheelFrontLeft" type="MeshInstance3D" parent="VehicleWheel3D"]
+mesh = ExtResource("2_8k1hh")
+skeleton = NodePath("../..")
+
+[node name="VehicleWheel3D2" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.57, -1.17386, -2.02268)
+use_as_traction = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.57
+suspension_stiffness = 180.0
+
+[node name="CarPoliceWheelFrontLeft" type="MeshInstance3D" parent="VehicleWheel3D2"]
+mesh = ExtResource("2_8k1hh")
+skeleton = NodePath("../..")
+
+[node name="VehicleWheel3D3" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57, -1.17353, 2)
+use_as_steering = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.57
+suspension_stiffness = 180.0
+
+[node name="CarPoliceWheelFrontLeft" type="MeshInstance3D" parent="VehicleWheel3D3"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("2_8k1hh")
+skeleton = NodePath("../..")
+
+[node name="VehicleWheel3D4" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57, -1.17386, -2.02268)
+use_as_traction = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.57
+suspension_stiffness = 180.0
+
+[node name="CarPoliceWheelFrontLeft" type="MeshInstance3D" parent="VehicleWheel3D4"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("2_8k1hh")
+skeleton = NodePath("../..")
+
+[node name="CamAnchor" type="Node3D" parent="."]
+
+[node name="DriverCam" type="Camera3D" parent="CamAnchor"]
+transform = Transform3D(-1, 0, 8.74228e-08, 3.75469e-08, 0.903073, 0.429487, -7.89492e-08, 0.429487, -0.903073, 0, 3.22679, -8.04785)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_sy7uk")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

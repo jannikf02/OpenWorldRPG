@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c0efmlgo75xbe"
+path="res://.godot/imported/park_wall_outerCorner.obj-97886854996a0ead813b33f5f346094d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/park_wall_outerCorner.obj-97886854996a0ead813b33f5f346094d.mesh"]
+
+source_file="res://tiles/park_wall_outerCorner.obj"
+dest_files=["res://.godot/imported/park_wall_outerCorner.obj-97886854996a0ead813b33f5f346094d.mesh", "res://.godot/imported/park_wall_outerCorner.obj-97886854996a0ead813b33f5f346094d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

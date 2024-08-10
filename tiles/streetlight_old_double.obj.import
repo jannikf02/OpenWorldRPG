@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dqncu65finosm"
+path="res://.godot/imported/streetlight_old_double.obj-c9d7407e14b0863b8cf50c3b1a8ca68c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/streetlight_old_double.obj-c9d7407e14b0863b8cf50c3b1a8ca68c.mesh"]
+
+source_file="res://tiles/streetlight_old_double.obj"
+dest_files=["res://.godot/imported/streetlight_old_double.obj-c9d7407e14b0863b8cf50c3b1a8ca68c.mesh", "res://.godot/imported/streetlight_old_double.obj-c9d7407e14b0863b8cf50c3b1a8ca68c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

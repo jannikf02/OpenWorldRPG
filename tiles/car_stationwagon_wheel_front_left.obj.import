@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c3uk01q4p6fga"
+path="res://.godot/imported/car_stationwagon_wheel_front_left.obj-099854e0e6763aac682e59b4d4c187dd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/car_stationwagon_wheel_front_left.obj-099854e0e6763aac682e59b4d4c187dd.mesh"]
+
+source_file="res://tiles/car_stationwagon_wheel_front_left.obj"
+dest_files=["res://.godot/imported/car_stationwagon_wheel_front_left.obj-099854e0e6763aac682e59b4d4c187dd.mesh", "res://.godot/imported/car_stationwagon_wheel_front_left.obj-099854e0e6763aac682e59b4d4c187dd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

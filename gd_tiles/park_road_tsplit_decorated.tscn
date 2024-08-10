@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfeb3c5bqcexo"]
+
+[ext_resource type="ArrayMesh" uid="uid://dfdngg1ijdbbl" path="res://tiles/park_road_tsplit_decorated.obj" id="1_3uumb"]
+[ext_resource type="ArrayMesh" uid="uid://yu4drogm1mr5" path="res://tiles/park_road_straight.obj" id="2_es1tl"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_omhlx"]
+data = PackedVector3Array(-2, 0.8, -8, -2, 0.8, 8, -8, 0.8, -8, -8, 0.8, -8, -2, 0.8, 8, -8, 0.8, 8, -8, 0.8, 8, -2, 0.8, 8, -8, 0, 8, -8, 0, 8, -2, 0.8, 8, -2, 0, 8, -8, 0, -8, -8, 0.8, -8, -8, 0, 8, -8, 0, 8, -8, 0.8, -8, -8, 0.8, 8, 8, 0.8, 8, 8, 0.8, -8, 8, 0, 8, 8, 0, 8, 8, 0.8, -8, 8, 0, -8, -2, 0, 8, -2, 0, -8, -8, 0, 8, -8, 0, 8, -2, 0, -8, -8, 0, -8, 8, 0.8, -8, 2, 0.8, -8, 8, 0, -8, 8, 0, -8, 2, 0.8, -8, 2, 0, -8, -2, 0.8, -8, -8, 0.8, -8, -2, 0, -8, -2, 0, -8, -8, 0.8, -8, -8, 0, -8, 2, 0.8, -8, -2, 0.8, -8, 2, 0, -8, 2, 0, -8, -2, 0.8, -8, -2, 0, -8, 8, 0, 8, 8, 0, -8, 2, 0, 8, 2, 0, 8, 8, 0, -8, 2, 0, -8, 2, 0, 8, 2, 0, -8, -2, 0, 8, -2, 0, 8, 2, 0, -8, -2, 0, -8, 2, 0.8, 8, 8, 0.8, 8, 2, 0, 8, 2, 0, 8, 8, 0.8, 8, 8, 0, 8, -2, 0.8, 8, 2, 0.8, 8, -2, 0, 8, -2, 0, 8, 2, 0.8, 8, 2, 0, 8, 8, 0.8, -8, 8, 0.8, 8, 2, 0.8, -8, 2, 0.8, -8, 8, 0.8, 8, 2, 0.8, 8, 2, 0.8, -8, 2, 0.8, 8, -2, 0.8, -8, -2, 0.8, -8, 2, 0.8, 8, -2, 0.8, 8)
+
+[node name="ParkRoadTsplitDecorated" type="MeshInstance3D"]
+mesh = ExtResource("1_3uumb")
+
+[node name="ParkRoadStraight" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_es1tl")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ParkRoadStraight"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParkRoadStraight/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_omhlx")

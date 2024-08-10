@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cc38rriblhq8w"
+path="res://.godot/imported/building_H_withoutBase.obj-b5e77c759673fc7a3f3681e49725635f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building_H_withoutBase.obj-b5e77c759673fc7a3f3681e49725635f.mesh"]
+
+source_file="res://tiles/building_H_withoutBase.obj"
+dest_files=["res://.godot/imported/building_H_withoutBase.obj-b5e77c759673fc7a3f3681e49725635f.mesh", "res://.godot/imported/building_H_withoutBase.obj-b5e77c759673fc7a3f3681e49725635f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

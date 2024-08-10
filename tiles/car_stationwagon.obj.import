@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwjgwvmc0vsfa"
+path="res://.godot/imported/car_stationwagon.obj-8796fc378943b20be8db1939c71ae885.mesh"
+
+[deps]
+
+files=["res://.godot/imported/car_stationwagon.obj-8796fc378943b20be8db1939c71ae885.mesh"]
+
+source_file="res://tiles/car_stationwagon.obj"
+dest_files=["res://.godot/imported/car_stationwagon.obj-8796fc378943b20be8db1939c71ae885.mesh", "res://.godot/imported/car_stationwagon.obj-8796fc378943b20be8db1939c71ae885.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

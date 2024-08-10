@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://h2pkmag8ckwp"
+path="res://.godot/imported/bush_C.obj-9509737c48db21a090a16ae10a300d4b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bush_C.obj-9509737c48db21a090a16ae10a300d4b.mesh"]
+
+source_file="res://tiles/bush_C.obj"
+dest_files=["res://.godot/imported/bush_C.obj-9509737c48db21a090a16ae10a300d4b.mesh", "res://.godot/imported/bush_C.obj-9509737c48db21a090a16ae10a300d4b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
